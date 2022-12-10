@@ -8,7 +8,7 @@ Clicker.addEventListener("click", repoadd )
 
 function repoadd(){
     repo+=clickerValue
-    console.log(repo)
+    console.log(repo) // makni ovaj console.log
     balance.innerText = "Balance: " + repo;
 }
 
@@ -20,6 +20,5 @@ upgrades.addEventListener('click',()=>{
     poppup.classList.toggle('active');
 })
 closePoppup.addEventListener('click',()=>{
-    console.log('dsads')
     poppup.classList.toggle('active');
 })

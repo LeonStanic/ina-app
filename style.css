@@ -121,6 +121,7 @@ body{
   display: block;
 }
 .close{
+  cursor: pointer;
   font-family: sans;
   display: flex;
   justify-content: flex-end;
