@@ -8,6 +8,9 @@ const Pumpa = document.getElementById("upgrade2")
 const Cjevovod = document.getElementById("upgrade3")
 const Save = document.querySelector(".refinery")
 const Load = document.querySelector(".stanic")
+var username = localStorage.getItem("usernamee")
+
+console.log(username)
 
 Load.addEventListener('click', ()=>{
     repo = parseInt(localStorage.getItem("repo"))
@@ -23,7 +26,10 @@ Load.addEventListener('click', ()=>{
     pumpaCijena = parseInt(localStorage.getItem("pumpaCijena"))
     spremnici = parseInt(localStorage.getItem("spremnici"))
     spremniciCijena = parseInt(localStorage.getItem("spremniciCijena"))
+    username = toString(localStorage.getItem("usernamee"))
     console.log("Loaded")
+    console.log(username)
+    console.log(toString(localStorage.getItem("usernamee")))
 })
 Spremnik.addEventListener('click', ()=>{
     if(repo>=spremniciCijena){
@@ -104,17 +110,22 @@ Save.addEventListener('click', ()=>{
     localStorage.setItem("pumpaCijena", pumpaCijena)
     localStorage.setItem("spremnici", spremnici)
     localStorage.setItem("spremniciCijena", spremniciCijena)
+    localStorage.setItem("usernamee", toString(username))
     console.log("Saved")
 })
 
 const usernameModal = document.querySelector('.username-modal');
-const closeModal = document.querySelector('.username-modal .close');
 const overlay = document.querySelector('.overlay');
-
+const nastavibutton = document.getElementById("nastavibutton")
+overlay.classList.toggle("none")
+if(Load.innerHTML="Username"){
 window.addEventListener('DOMContentLoaded',()=>{
      usernameModal.classList.toggle("active");
+     overlay.classList.toggle("active")
 })
-closeModal.addEventListener('click',()=>{
+}
+nastavibutton.addEventListener('click',()=>{
     usernameModal.classList.toggle("active");
-    overlay.classList.toggle("none");
+    overlay.classList.toggle("active");
+    Load.innerHTML = document.getElementById("myusername").value
 })
