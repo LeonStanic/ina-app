@@ -26,7 +26,7 @@ body{
     margin-top:10rem;
 }
 
-a{
+.clicker-main > a{
     text-align: center;
     text-decoration:none;
     color:#000;
@@ -44,7 +44,7 @@ a{
     position: relative;
     padding: 1.5rem;
   }
-   a:after{
+   .clicker-main > a:after{
     content: "";
     position: absolute;
     left: 0;
@@ -59,10 +59,10 @@ a{
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
   }
-  a:hover{
+  .clicker-main > a:hover{
     background-color: transparent;
   }
-   a:active{
+   .clicker-main > a:active{
      top:5px;
      left:5px;
      box-shadow:0 0 0 0;
@@ -79,3 +79,17 @@ a{
     bottom: 0;
     z-index: -1;
   }
+  .switch-1{
+    list-style-type: none;
+  }
+.upgrades{
+  text-decoration: none;
+  list-style-type: none;
+}
+.upgrades > img{
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  width: 10rem;
+  border: #fff solid 1px;
+}
