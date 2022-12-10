@@ -8,6 +8,7 @@
 body{
     margin:0;
     padding:0;
+    overflow: hidden;
 }
 .header-main > button{
     margin:0;
@@ -81,15 +82,25 @@ body{
   }
   .switch-1{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
   }
 .upgrades{
   text-decoration: none;
   list-style-type: none;
-}
-.upgrades > img{
-  display: flex;
   margin-top: 10rem;
   justify-content: center;
   width: 10rem;
   border: #fff solid 1px;
+  background-color: #d14f4d;
+}
+.refinery{
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 10rem;
+  margin-left: 4.4rem;
+  justify-content: center;
+  width: 10rem;
+  border: #fff solid 1px;
+  background-color: #d14f4d;
 }
