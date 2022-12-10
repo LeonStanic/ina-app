@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header-main{
+ background-color:#044b9b;   
+}
+.header-main > button{
+    margin:0;
+}
+.header-main > h1{
+    display: flex;
+    margin:0;
+    justify-content: center;
+    font-size: 250%;
+}
+.balance-main{
+    text-align: center;
+}
+.clicker-main{
+    display: flex;
+}
+
+a{
+    text-align: center;
+    text-decoration:none;
+    color:#000;
+    margin:auto;
+    width:150px;
+    display:inline-block;
+    line-height:40px;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    background-color: #fff;
+    border:5px solid #000;
+    box-shadow:1px 1px 0, 2px 2px 0, 3px 3px 0, 4px 4px 0,5px 5px 0;
+    position: relative;
+  }
+   a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+     z-index: -1;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  a:hover{
+    background-color: transparent;
+  }
+   a:active{
+     top:5px;
+     left:5px;
+     box-shadow:0 0 0 0;
+     background-color: yellow;
+  }
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
