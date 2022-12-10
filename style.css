@@ -123,7 +123,7 @@ body{
   transition: 0.5s ease-in;
 }
 .active{
-  display: block;
+  display: block !important;
 }
 .close{
   cursor: pointer;
@@ -133,6 +133,9 @@ body{
   position: fixed;
   right: 2rem;
   top:1rem;
+}
+.none{
+  display: none;
 }
 .upgrade--wrapper{
     gap:1rem;
@@ -147,4 +150,40 @@ body{
 .wrapper--logo img{
   height: 100%;
   width: 100%;
+}
+.overlay{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.7;
+}
+.username-modal{
+  top:5rem;
+  left:2.5rem;
+  width: 80%;
+  height: 80%;
+  z-index: 100;
+  background-color: white;
+  position: absolute;
+  display: none;
+  transition: 0.5s ease-in;
+}
+.username--wrapper{
+  margin-top: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.username-modal .close{
+  cursor: pointer;
+  font-family: sans;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 4rem;
+  top:6rem;
 }

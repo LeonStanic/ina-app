@@ -106,3 +106,15 @@ Save.addEventListener('click', ()=>{
     localStorage.setItem("spremniciCijena", spremniciCijena)
     console.log("Saved")
 })
+
+const usernameModal = document.querySelector('.username-modal');
+const closeModal = document.querySelector('.username-modal .close');
+const overlay = document.querySelector('.overlay');
+
+window.addEventListener('DOMContentLoaded',()=>{
+     usernameModal.classList.toggle("active");
+})
+closeModal.addEventListener('click',()=>{
+    usernameModal.classList.toggle("active");
+    overlay.classList.toggle("none");
+})
