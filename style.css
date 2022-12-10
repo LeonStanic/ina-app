@@ -17,9 +17,13 @@ body{
     margin:0;
     justify-content: center;
     font-size: 250%;
+    border: #fff solid 1px;
+    background-color: #d14f4d;
 }
 .balance-main{
     text-align: center;
+    border: #fff solid 1px;
+    background-color: #d14f4d;
 }
 .clicker-main{
     display: flex;
@@ -116,6 +120,7 @@ body{
   position: absolute;
   top:0;
   display: none;
+  transition: 0.5s ease-in;
 }
 .active{
   display: block;
