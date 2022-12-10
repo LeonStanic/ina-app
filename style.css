@@ -8,7 +8,6 @@
 body{
     margin:0;
     padding:0;
-    overflow: hidden;
 }
 .header-main > button{
     margin:0;
@@ -109,4 +108,37 @@ body{
   text-align: center;
   border: #fff solid 1px;
   background-color: #d14f4d;
+}
+.poppup-modal{
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  position: absolute;
+  top:0;
+  display: none;
+}
+.active{
+  display: block;
+}
+.close{
+  font-family: sans;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 2rem;
+  top:1rem;
+}
+.upgrade--wrapper{
+    gap:1rem;
+    font-size: 0.825rem;
+    display: flex;
+    margin:3rem;
+}
+.wrapper--logo{
+  width: 150px;
+  height: 150px;
+}
+.wrapper--logo img{
+  height: 100%;
+  width: 100%;
 }
