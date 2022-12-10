@@ -1,9 +1,13 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
 body{
     margin:0;
     padding:0;
-}
-.header-main{
- background-color:#044b9b;   
 }
 .header-main > button{
     margin:0;
@@ -19,6 +23,7 @@ body{
 }
 .clicker-main{
     display: flex;
+    margin-top:10rem;
 }
 
 a{
@@ -26,10 +31,10 @@ a{
     text-decoration:none;
     color:#000;
     margin:auto;
-    width:150px;
+    width:15rem;
     display:inline-block;
-    line-height:40px;
-    font-size:12px;
+    line-height:2rem;
+    font-size:3rem;
     font-weight:900;
     letter-spacing:2px;
     text-transform:uppercase;
@@ -37,6 +42,7 @@ a{
     border:5px solid #000;
     box-shadow:1px 1px 0, 2px 2px 0, 3px 3px 0, 4px 4px 0,5px 5px 0;
     position: relative;
+    padding: 1.5rem;
   }
    a:after{
     content: "";
