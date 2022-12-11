@@ -15,7 +15,7 @@
     
 </head>
 <body>
-    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <video id="background-video"autoplay loop muted poster="img/background.jpeg">
         <source src="img/background.mp4" type="video/mp4">
         </video>
     <div class="header-main">
@@ -31,7 +31,7 @@
     <div class="footer">
         <li class="switch-1">
                 <img src="img/upgrades.png" alt="upgrades" class="upgrades"> 
-                <img src="img/refinery.png" alt="refinery" class="refinery"> 
+                <img src="img/save.png" alt="refinery" class="refinery"> 
         </li>
         <h1 class="stanic">Username</h1>
     </div>
@@ -39,57 +39,47 @@
         <h1 class="close">X</h1>
         <div class="upgrade--wrapper">
             <div class="wrapper--logo">
-                <img src="./img/logo.png" alt="">
+                <img src="./img/upgrade1.png" alt="">
             </div>
             <div class="wrapper--content">
-                <h1>Naslov</h1>
-                <p>Opis upgradea? </p>
+                <h1>Spremnik</h1>
+                <p id="upgrade1desc"></p>
                 <button id="upgrade1">Upgrade</button>
             </div>
         </div>
         <div class="upgrade--wrapper">
             <div class="wrapper--logo">
-                <img src="./img/logo.png" alt="">
+                <img src="./img/upgrade2.png" alt="">
             </div>
             <div class="wrapper--content">
-                <h1>Naslov</h1>
-                <p>Opis upgradea? </p>
+                <h1>Pumpa</h1>
+                <p id="upgrade2desc"></p>
                 <button id="upgrade2">Upgrade</button>
             </div>
         </div>
         <div class="upgrade--wrapper">
             <div class="wrapper--logo">
-                <img src="./img/logo.png" alt="">
+                <img src="./img/upgrade3.png" alt="">
             </div>
             <div class="wrapper--content">
-                <h1>Naslov</h1>
-                <p>Opis upgradea? </p>
+                <h1>Cjevovod</h1>
+                <p id="upgrade3desc"></p>
                 <button id="upgrade3">Upgrade</button>
             </div>
         </div>
         <div class="upgrade--wrapper">
             <div class="wrapper--logo">
-                <img src="./img/logo.png" alt="">
+                <img src="./img/upgrade4.png" alt="">
             </div>
             <div class="wrapper--content">
-                <h1>Naslov</h1>
-                <p>Opis upgradea? </p>
+                <h1>Kolona</h1>
+                <p id="upgrade4desc"></p>
                 <button id="upgrade4">Upgrade</button>
-            </div>
-        </div>
-        <div class="upgrade--wrapper">
-            <div class="wrapper--logo">
-                <img src="./img/logo.png" alt="">
-            </div>
-            <div class="wrapper--content">
-                <h1>Naslov</h1>
-                <p>Opis upgradea? </p>
-                <button id="upgrade5">Upgrade</button>
             </div>
         </div>
     </div>
     <div class="overlay"></div>
-    <div class="username-modal">
+    <div class="username-modal" id="neznamvise">
         <div class="username--wrapper">
             <label for="">Enter your name</label>
             <br>

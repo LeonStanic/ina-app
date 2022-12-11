@@ -121,6 +121,7 @@ body{
   top:0;
   display: none;
   transition: 0.5s ease-in;
+  height: 100%;
 }
 .active{
   display: block !important;
@@ -147,9 +148,9 @@ body{
   width: 150px;
   height: 150px;
 }
-.wrapper--logo img{
-  height: 100%;
-  width: 100%;
+.wrapper--logo > img{
+  height: auto;
+  width: 10rem;
 }
 .overlay{
   top: 0;
@@ -159,6 +160,7 @@ body{
   background-color: white;
   opacity: 0.7;
 }
+
 .username-modal{
   top:5rem;
   left:2.5rem;
